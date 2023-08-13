@@ -11,7 +11,7 @@ def load_data(data):
     return pd.read_csv(data)
 
 def main():
-    st.title("Aplikasi Pivot Tabel - Tableu Like")
+    st.title("Aplikasi Pivot Tabel - Visualisasi")
 
     menu = ["Home", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
