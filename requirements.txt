@@ -1,4 +1,4 @@
 streamlit
-streamlit.components.v1
+streamlit.components
 pandas
 pygwalker
