@@ -66,12 +66,14 @@ def main():
         data_filter_tahun = df[df['Tahun'] == pilih_tahun]
 
         fig = px.scatter(
-            data_filter_tahun,
+            dfkabkot,
             x="pdrbperkapita",
             y="Usia Harapan Hidup (Tahun)",
             size="Penduduk",
             color="Koordinasi",
             hover_name="Wilayah",
+            animation_frame="Tahun",
+            animation_group="Wilayah",
             log_x=True,
             size_max=90,
             title=f"PDRB Perkapita - Usia Harapan Hidup, {pilih_tahun}",
